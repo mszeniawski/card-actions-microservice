@@ -1,12 +1,12 @@
 using CardActionsService.Application.Queries.Card.GetAllowedActions;
 using CardActionsService.Application.Services.AllowedActions;
 using CardActionsService.Application.Services.Card;
-using CardService.Domain.Entities;
-using CardService.Domain.Enums;
+using CardActionsService.Domain.Entities;
+using CardActionsService.Domain.Enums;
 using FluentAssertions;
 using Moq;
 
-namespace CardService.Application.Tests.Queries.Card.GetAllowedActions;
+namespace CardActionsService.Application.Tests.Queries.Card.GetAllowedActions;
 
 public class GetAllowedActionsQueryHandlerTests
 {

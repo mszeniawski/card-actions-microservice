@@ -1,4 +1,4 @@
-using CardService.Domain.Enums;
+using CardActionsService.Domain.Enums;
 
 namespace CardActionsService.Application.Services.AllowedActions;
 

@@ -1,4 +1,4 @@
-namespace CardService.Domain.Enums;
+namespace CardActionsService.Domain.Enums;
 
 public enum AllowedAction
 {

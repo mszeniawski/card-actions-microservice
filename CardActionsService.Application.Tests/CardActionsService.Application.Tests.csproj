@@ -24,7 +24,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CardActionsService.Application\CardActionsService.Application.csproj" />
-      <ProjectReference Include="..\CardService.Domain\CardService.Domain.csproj" />
+      <ProjectReference Include="..\CardActionsService.Domain\CardActionsService.Domain.csproj" />
     </ItemGroup>
 
 </Project>

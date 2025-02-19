@@ -1,5 +1,5 @@
-using CardService.Domain.Entities;
-using CardService.Domain.Enums;
+using CardActionsService.Domain.Entities;
+using CardActionsService.Domain.Enums;
 
 namespace CardActionsService.Application.Services.Card;
 

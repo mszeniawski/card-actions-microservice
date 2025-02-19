@@ -1,4 +1,4 @@
-using CardService.Domain.Entities;
+using CardActionsService.Domain.Entities;
 
 namespace CardActionsService.Application.Services.Card;
 
