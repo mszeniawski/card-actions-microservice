@@ -1,0 +1,66 @@
+# --- GENERAL .NET IGNORE RULES ---
+
+# Build files
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.log
+*.cache
+*.so
+*.dylib
+*.swp
+
+# User-specific files
+*.user
+*.suo
+*.vs/
+.vscode/
+.idea/
+*.sln.docstates
+
+# Config and environment
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+
+# Logs and crash reports
+*.log
+*.tlog
+*.dmp
+*.sdf
+*.VC.db
+logs/
+trace.log
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+project.lock.json
+package-lock.json
+node_modules/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# --- ASP.NET & Minimal API SPECIFIC FILES ---
+Properties/launchSettings.json
+
+# --- ENTITY FRAMEWORK MIGRATIONS ---
+migrations/
+efcache/
+
+# --- DOTNET TOOLS & SECRETS ---
+.dotnet-tools/
+.dotnet-packages/
+.dotnet/temp/
+secrets.json
+.env
+*.env
+
+# --- OTHER GENERATED FILES ---
+Generated_Code/

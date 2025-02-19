@@ -1,0 +1,23 @@
+using CardService.Domain.Entities;
+using CardService.Domain.Enums;
+
+namespace CardActionsService.Application.Services.AllowedActions;
+
+public class Action7RuleService : IAllowedActionRuleService
+{
+    public AllowedAction AllowedAction => AllowedAction.Action7;
+    public bool IsAllowed(CardDetails cardDetails)
+    {
+        var cardStatusRuleValue = cardDetails.CardStatus switch
+        {
+            CardStatus.Ordered => !cardDetails.IsPinSet,
+            CardStatus.Inactive => !cardDetails.IsPinSet,
+            CardStatus.Active => !cardDetails.IsPinSet,
+            CardStatus.Blocked => cardDetails.IsPinSet,
+            _ => false
+        };
+
+        return cardDetails.CardType is CardType.Prepaid or CardType.Debit or CardType.Credit &&
+               cardStatusRuleValue;
+    }
+}
